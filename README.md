@@ -6,12 +6,13 @@
 
 ### Music
 
-- [ ] Download Tracks
+- [X] Download Tracks
 - [ ] Test Ableton Mixing
 - [ ] Test AKAI
-- [ ] First draft setlist
+- [X] First draft setlist
+- [ ] Cut tracks
 - [ ] Practice
-- [ ] Meet with Matt
+- [X] Meet with Matt
 
 ### Visuals
 
@@ -49,20 +50,24 @@
 
 ### Audience Controls
 
-- [ ] Decide on inputs
-- [ ] Order/source parts
+- [X] Decide on inputs
+- [X] Order/source parts
 - [ ] Decide on look
 - [ ] Get materials
+- [ ] Get tacos
+- [ ] Resin casting
 - [ ] Make controllers
 - [ ] Test input
 - [ ] LEDs (sound reactive?)
-- [ ] Get little sake pourer and disposable cups (and sho chiku bai?) (and bring trash can?)
+- [X] Get little sake pourer and disposable cups (and sho chiku bai?) (and bring trash can?)
 
 ### Wearables
 
-- [ ] Decide on look
-  - [ ] hachimaki? with bell on front?
-- [ ] Source parts
+- [X] Decide on look
+  - [X] hachimaki? with bell on front? takoberu
+- [X] Source headband
+- [ ] Get Acrylic
+- [ ] Engrave/Cut Acrylic
 - [ ] Make
 - [ ] Test output
 - [ ] Test with camera / pixels
@@ -73,6 +78,8 @@
 - [ ] Camera and Tripod (remote turn on or manual? Long enough? Test)
 - [ ] Intro speech
 - [ ] Get Baja Blast
+- [ ] Get Sake
+- [ ] Trashbag
 
 ## Tracks
 
@@ -95,6 +102,7 @@
 |  Make My Eyes Roll Back | 125  |   |   |
 |  Miss You | 88 |   |   |
 |  My Body My Future | 124  |   |   |
+|  Spirit Gun | 93  |   |   |
 |  Stardust Circuit | 125  |   |   |
 | Str8 Acting  | 147  |   |   |
 |  Tired and Sick | 135  |   |   |
