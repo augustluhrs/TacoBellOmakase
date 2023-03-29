@@ -28,6 +28,8 @@
   - [ ] ITP NeRF
   - [ ] Wonderville NeRF
   - [ ] TacoBell stuff
+    - [X] baja blast NeRF
+    - [ ] takeout bag NeRF
   - [ ] Omakase stuff
   - [ ] kratom
   - [ ] tik tok
@@ -54,9 +56,11 @@
 - [X] Order/source parts
 - [ ] Decide on look
 - [ ] Get materials
-- [ ] Get tacos
+- [X] Get tacos
+- [ ] Get small TB cups
 - [ ] Resin casting
 - [ ] Make controllers
+- [ ] engrave controllers?
 - [ ] Test input
 - [ ] LEDs (sound reactive?)
 - [X] Get little sake pourer and disposable cups (and sho chiku bai?) (and bring trash can?)
