@@ -18,6 +18,7 @@
 ### Visuals
 
 - [ ] TD Template
+- [ ] Webcam controller tutorial
 - [ ] Download Visuals
   - [ ] Frogs
   - [ ] Fight Scenes
