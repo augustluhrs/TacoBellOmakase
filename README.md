@@ -7,10 +7,11 @@
 ### Music
 
 - [X] Download Tracks
-- [ ] Test Ableton Mixing
-- [ ] Test AKAI
+- [X] Test Ableton Mixing
+- [X] Test AKAI
 - [X] First draft setlist
-- [ ] Cut tracks
+- [X] Cut tracks
+- [ ] Check time
 - [ ] Practice
 - [X] Meet with Matt
 
@@ -55,10 +56,10 @@
 - [X] Decide on inputs
 - [X] Order/source parts
 - [ ] Decide on look
-- [ ] Get materials
+- [X] Get materials
 - [X] Get tacos
-- [ ] Get small TB cups
-- [ ] Resin casting
+- [X] Get small TB cups
+- [X] Resin casting
 - [ ] Make controllers
 - [ ] engrave controllers?
 - [ ] Test input
