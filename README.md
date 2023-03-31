@@ -31,7 +31,7 @@
   - [ ] Wonderville NeRF
   - [ ] TacoBell stuff
     - [X] baja blast NeRF
-    - [ ] takeout bag NeRF
+    - [X] takeout bag NeRF
   - [ ] Omakase stuff
   - [ ] kratom
   - [ ] tik tok
@@ -44,27 +44,30 @@
   - [ ] Prancing horses
   - [ ] dancing minecraft animals
   - [ ] dancing shrimp and srimp jesus sign (kara message)
-- [ ] Webcam / Kinect tests
+- [X] Webcam / Kinect tests
 - [ ] Sections
 - [ ] Audio Reactive
 - [ ] MIDI Input parameters
 - [ ] Game Structure and Win Screen
-- [ ] Ask Tom / Arnab / Nun
+- [ ] ~~Ask Tom / Arnab / Nun~~
 - [ ] Meet with Casey
 
 ### Audience Controls
 
 - [X] Decide on inputs
 - [X] Order/source parts
-- [ ] Decide on look
+- [X] Decide on look
 - [X] Get materials
 - [X] Get tacos
 - [X] Get small TB cups
 - [X] Resin casting
+- [X] Sand resin
 - [ ] Make controllers
-- [ ] engrave controllers?
+- [ ] ~~engrave controllers?~~
+- [X] Arduino Code
+- [ ] Wiring
 - [ ] Test input
-- [ ] LEDs (sound reactive?)
+- [ ] ~~LEDs (sound reactive?)~~
 - [X] Get little sake pourer and disposable cups (and sho chiku bai?) (and bring trash can?)
 
 ### Wearables
@@ -72,17 +75,17 @@
 - [X] Decide on look
   - [X] hachimaki? with bell on front? takoberu
 - [X] Source headband
-- [ ] Get Acrylic
-- [ ] Engrave/Cut Acrylic
+- [ ] ~~Get Acrylic~~
+- [ ] ~~Engrave/Cut Acrylic~~
 - [ ] Make
-- [ ] Test output
-- [ ] Test with camera / pixels
+- [ ] ~~Test output~~
+- [ ] ~~Test with camera / pixels~~
 
 ### Performance
 
 - [ ] Tech Setup checklist
 - [ ] Camera and Tripod (remote turn on or manual? Long enough? Test)
-- [ ] Intro speech
+- [X] Intro speech
 - [ ] Get Baja Blast
 - [ ] Get Sake
 - [ ] Trashbag
