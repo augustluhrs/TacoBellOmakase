@@ -27,10 +27,15 @@ const int upPin = 7;
 const int downPin = 8;
 const int leftPin = 9;
 const int rightPin = 10;
-int joyUp = 0;
-int joyDown = 0;
-int joyLeft = 0;
-int joyRight = 0;
+int joyUp = 1;
+int joyDown = 1;
+int joyLeft = 1;
+int joyRight = 1;
+Bounce2::Button upButt = Bounce2::Button();
+Bounce2::Button downButt = Bounce2::Button();
+Bounce2::Button leftButt = Bounce2::Button();
+Bounce2::Button rightButt = Bounce2::Button();
+
 
 //baja rotary encoder -- pins 2, 3
 const int rePin1 = 2;
@@ -49,20 +54,34 @@ void setup() {
   // while (!Serial);
 
   //sauce button
-  button.attach(buttonPin, INPUT);
+  button.attach(buttonPin, INPUT_PULLUP);
   button.interval(5);
-  button.setPressedState(HIGH);
+  button.setPressedState(LOW);
 
   //chopstick slider
 
   //taco joystick
-  pinMode(upPin, INPUT_PULLUP);
-  pinMode(downPin, INPUT_PULLUP);
-  pinMode(leftPin, INPUT_PULLUP);
-  pinMode(rightPin, INPUT_PULLUP);
+  upButt.attach(upPin, INPUT_PULLUP);
+  upButt.interval(5);
+  upButt.setPressedState(LOW);
+  downButt.attach(downPin, INPUT_PULLUP);
+  downButt.interval(5);
+  downButt.setPressedState(LOW);
+  leftButt.attach(leftPin, INPUT_PULLUP);
+  leftButt.interval(5);
+  leftButt.setPressedState(LOW);
+  rightButt.attach(rightPin, INPUT_PULLUP);
+  rightButt.interval(5);
+  rightButt.setPressedState(LOW);
+  // pinMode(upPin, INPUT_PULLUP);
+  // pinMode(downPin, INPUT_PULLUP);
+  // pinMode(leftPin, INPUT_PULLUP);
+  // pinMode(rightPin, INPUT_PULLUP);
 
   //baja rotary encoder
   encoder.begin();
+  attachInterrupt(digitalPinToInterrupt(rePin1), interrupt, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(rePin2), interrupt, CHANGE);
 
   //tests
   pinMode(ledPin, OUTPUT);
@@ -95,34 +114,64 @@ void loop() {
   }
 
   //taco joystick
-  joyUp = digitalRead(upPin);
-  joyDown = digitalRead(downPin);
-  joyLeft = digitalRead(leftPin);
-  joyRight = digitalRead(rightPin);
+  upButt.update();
+  downButt.update();
+  leftButt.update();
+  rightButt.update();
 
-  if (joyUp == 1){
+  if (upButt.pressed()){
     noteOn(0x90, 43, 0x45);
-    delay(20);
+    delay(5);
+  } else if (upButt.released()){
     noteOn(0x90, 43, 0x00);
   }
-  if (joyDown == 1){
+  if (downButt.pressed()){
     noteOn(0x90, 44, 0x45);
-    delay(20);
+    delay(5);
+  } else if (downButt.released()){
     noteOn(0x90, 44, 0x00);
   }
-  if (joyLeft == 1){
+  if (leftButt.pressed()){
     noteOn(0x90, 45, 0x45);
-    delay(20);
+    delay(5);
+  } else if (leftButt.released()){
     noteOn(0x90, 45, 0x00);
   }
-  if (joyRight == 1){
+  if (rightButt.pressed()){
     noteOn(0x90, 46, 0x45);
-    delay(20);
+    delay(5);
+  } else if (rightButt.released()){
     noteOn(0x90, 46, 0x00);
   }
 
+  // joyUp = digitalRead(upPin);
+  // joyDown = digitalRead(downPin);
+  // joyLeft = digitalRead(leftPin);
+  // joyRight = digitalRead(rightPin);
+
+  // if (joyUp == 0){
+  //   noteOn(0x90, 43, 0x45);
+  //   delay(20);
+  //   noteOn(0x90, 43, 0x00);
+  // }
+  // if (joyDown == 0){
+  //   noteOn(0x90, 44, 0x45);
+  //   delay(20);
+  //   noteOn(0x90, 44, 0x00);
+  // }
+  // if (joyLeft == 0){
+  //   noteOn(0x90, 45, 0x45);
+  //   delay(20);
+  //   noteOn(0x90, 45, 0x00);
+  // }
+  // if (joyRight == 0){
+  //   noteOn(0x90, 46, 0x45);
+  //   delay(20);
+  //   noteOn(0x90, 46, 0x00);
+  // }
+
   //baja rotary encoder
-  encoder.tick();
+  // encoder.tick();
   int pos = encoder.getPosition();
   Serial.println(pos);
   if (pos > 127 || pos < 0){ //idk
@@ -139,6 +188,10 @@ void loop() {
   //tests
   // delay(10);
   
+}
+
+void interrupt(){
+  encoder.tick();
 }
 
 void noteOn(byte cmd, byte data1, byte data2){
